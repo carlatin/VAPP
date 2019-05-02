@@ -65,7 +65,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     url: '/registro',
     templateUrl:'templates/registro.html'
   })
+  .state("nutricion",{
+    url: '/nutricion',
+    templateUrl:'templates/nutricion.html'
+  })
+  .state("info",{
+    url: '/info',
+    templateUrl:'templates/info.html'
+  })
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/video');
+  $urlRouterProvider.otherwise('/info');
 
 });
